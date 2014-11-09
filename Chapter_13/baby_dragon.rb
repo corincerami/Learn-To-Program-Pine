@@ -74,15 +74,15 @@ class Dragon
 
     case action
     when "feed"
-      self.feed
+      feed
     when "walk"
-      self.walk
+      walk
     when "bed"
-      self.put_to_bed
+      put_to_bed
     when "toss"
-      self.toss
+      toss
     when "rock"
-      self.rock
+      rock
     else
       "Please enter either 'feed', 'walk', 'bed', 'toss', or 'rock'."
       interact
