@@ -1,5 +1,8 @@
+# keep track of how many indentations to print
 $tabs = 0
 
+# should state when starting and ending nested blocks
+# with appropriate indentation
 def logger(description)
   $tabs.times { print "    " }
   puts "Now running #{description}..."
@@ -10,6 +13,7 @@ def logger(description)
   puts "...#{description} has finished."
 end
 
+# example set of blocks to run through the logger
 logger("First block") do
   logger("Second block") do
     logger("Third block") do
